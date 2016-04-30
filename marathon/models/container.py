@@ -106,7 +106,7 @@ class MarathonContainerVolume(MarathonObject):
 
     MODES = ['RO', 'RW']
 
-    def __init__(self, container_path=None, host_path=None, mode='RW'):
+    def __init__(self, container_path=None, host_path=None, mode='RW', external=None):
         self.container_path = container_path
         self.host_path = host_path
         if mode not in self.MODES:
